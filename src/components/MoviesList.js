@@ -9,11 +9,11 @@ const MovieList = () => {
 
 
   return (
-    <ul>
+    <div className='movies-container'>
       {movies.map((movie) => (
         <Movie key={movie.id} movie={movie} />
       ))}
-    </ul>
+    </div>
   );
 };
 

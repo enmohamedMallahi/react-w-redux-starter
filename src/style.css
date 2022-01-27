@@ -32,3 +32,20 @@ nav a {
   color: #fff;
   text-decoration: none;
 }
+
+/*  */
+
+.movies-container {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 1rem;
+}
+
+.movie {
+  background-color: #fff;
+  border: 2px solid royalblue;
+  /* color: #fff; */
+  padding: 1rem;
+  text-align: center;
+}

@@ -8,8 +8,10 @@ export default function App() {
   return (
     <>
       <Navbar />
-      <MoviesList />
-      <AddMovie />
+      <main>
+        <MoviesList />
+        <AddMovie />
+      </main>
     </>
   );
 }
