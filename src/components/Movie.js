@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Movie = (movie) => {
-  return <li>{movie.title}</li>;
+const Movie = ({movie}) => {
+  return (<li>{movie.title}</li>);
 };
 
 export default Movie;

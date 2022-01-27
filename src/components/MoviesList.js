@@ -1,17 +1,20 @@
-import React from 'react'
-import Movie from './Movie'
-import {useSelector} from 'react-redux'
+import React from 'react';
+import Movie from './Movie';
+import { useSelector } from 'react-redux';
 
 const MovieList = () => {
-  const movies = useSelector(state => state)
+  const movies = useSelector((state) => state);
 
-  console.log(movies)
+  movies.map(movie => console.log(movie.title))
+
 
   return (
-    {movies.map(movie => (
-      <Movie movie={movie} />
-    ))}
-  )
-}
+    <ul>
+      {movies.map((movie) => (
+        <Movie key={movie.id} movie={movie} />
+      ))}
+    </ul>
+  );
+};
 
-export default MovieList
+export default MovieList;

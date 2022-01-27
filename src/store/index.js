@@ -25,7 +25,10 @@ const moviesReducer = (state = initialState, action) => {
   }
 };
 
-const store = createStore(moviesReducer);
+const store = createStore(
+  moviesReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
 
 store.subscribe(() => {
   console.log('counter', store.getState().counter);
