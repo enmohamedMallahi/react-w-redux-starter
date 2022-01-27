@@ -19,7 +19,9 @@ const moviesReducer = (state = initialState, action) => {
     case 'ADD_MOVIE':
       return [...state, action.newMovie];
     case 'DELETE_MOVIE':
-      return state;
+      console.log('Delete movie')
+      let updatedList = JSON.parse(JSON.stringify(state));
+      return updatedList.filter((mv) => mv.id != action.movieId);
     default:
       return state;
   }

@@ -4,3 +4,10 @@ export const addMovie = (newMovie) => {
     newMovie: newMovie,
   };
 };
+
+export const deleteMovie = (movieId) => {
+  return {
+    type: 'DELETE_MOVIE',
+    movieId: movieId,
+  };
+};
